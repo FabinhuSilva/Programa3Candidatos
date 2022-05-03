@@ -18,6 +18,7 @@ public class Progrma3Recrutamento {
         int candidatosMasculino=0, candidatosFemininos=0;
         int quantidadeHomens = 0, somaIdadesHomens=0,idade=0;
         int tempoExperienciaHomens=0, somaIdadesMulheres=0,candFemCExp=0;
+        double idademedia = 0, idademediamulheres = 0;
         char sexo,experiencia;
         
         Scanner respostaCandidato = new Scanner(System.in);
@@ -50,6 +51,10 @@ public class Progrma3Recrutamento {
         
         System.out.println("Total de Candidatos Masculinos: "+candidatosMasculino);
         System.out.println("Total de Candidatos Femininos: "+(candidatosFemininos+candFemCExp));
+        idademedia = somaIdadesHomens / candidatosMasculino;
+        System.out.println("Idade Média dos Candidados Homens: "+idademedia);
+        idademediamulheres = somaIdadesMulheres / candFemCExp;
+        System.out.println("Idade Media de Mulheres com Experiencia: "+idademediamulheres);
     }
     
 }
